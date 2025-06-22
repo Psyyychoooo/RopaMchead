@@ -180,6 +180,150 @@
   </style>
 </head>
 <body>
-<!-- El resto del HTML también va aquí (omitido por espacio) -->
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <nav class="sidebar" id="sidebar">
+    <a href="#" class="active">Catálogo</a>
+    <a href="https://psyyychoooo.github.io/McHeadPaquetes/" target="_blank">Paquetes</a>
+<a href="https://www.bing.com/th?id=OPHS.p7wOd%2fQdhOHC9g474C474&o=5&pid=21.1&w=136&h=136&qlt=100&dpr=1.3&c=8&pcl=f5f5f5" target="_blank">
+ <a href="https://psyyychoooo.github.io/McHeadPaquetes/" target="_blank">Prendas</a>  
+</nav>
+
+  <header>
+    <h1>McHEAD</h1>
+    <p>Catálogo de Ropa</p>
+    <p>SI, tambien manejamos prendas</p>
+<p>¡Envio gratis a todo México!</p>
+    <img class="logo-icon" src="https://i.imgur.com/your-logo.png" alt="Logo McHEAD" />
+  </header>
+
+  <div id="carrito">
+    <button id="cerrar-carrito" onclick="cerrarCarrito()">×</button>
+    <h3>Carrito</h3>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+    <div id="botones-pedido">
+      <button class="btn-copiar" onclick="copiarPedido()">Copiar pedido</button>
+      <button class="btn-instagram btn-enviar" onclick="enviarPedidoInstagram()">Enviar pedido por Instagram</button>
+    </div>
+  </div>
+
+  <section class="catalogo">
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="https://scontent.fcjs4-1.fna.fbcdn.net/v/t1.15752-9/508232646_1390173212211461_8017972759591750062_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=N5JNQgAZSTsQ7kNvwHbdd4U&_nc_oc=Adn_cMYAbgdcBb5rPbSyUn37Il8Q6HnRxhtMAw1Eb2AXOzJDA4NCCdT5V0fO4u48bKE&_nc_ad=z-m&_nc_cid=1092&_nc_zt=23&_nc_ht=scontent.fcjs4-1.fna&oh=03_Q7cD2gE9Ox43DoUXP_o1jj5CYcaQwJXo9LDatQJWL2AEquf4tQ&oe=687ECD6F" alt="Gorra A diseño de llama" />
+      <h2>Camiseta blanca</h2>
+      <p>Precio: $390.00 MXN</p>
+      <p class="stock">Agotado :(</p>
+      <button class="btn-carrito" onclick="agregarAlCarrito('Camiseta blanca', 390)">Agregar al carrito</button>
+    </div>
+
+    <<div class="producto">
+      <img src="https://scontent.fcjs4-1.fna.fbcdn.net/v/t1.15752-9/504324394_1009307928031536_102388608876213592_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=C-WfTmpTERcQ7kNvwEJLyIb&_nc_oc=Adk1WBYIkonjhU6-7QYffFXfcAFC1wZ5N0845wgYnHoZJ-AfLB5RACXMGzmN63AGJ6k&_nc_ad=z-m&_nc_cid=1092&_nc_zt=23&_nc_ht=scontent.fcjs4-1.fna&oh=03_Q7cD2gEaKul2SpRT21s1jA4XMwv_UEGWCsJmiAVz__ocdvdqtQ&oe=687E9ECE" alt="Gorra de cartas" />
+      <h2>Camiseta negra</h2>
+      <p>Precio: $390.00 MXN</p>
+      <p class="stock">Agotado :(</p>
+      <a class="btn-carrito" onclick="agregarAlCarrito('Camiseta negra', 390)">Agregar al carrito</a>>
+	</div>
+
+    <div class="producto">
+      <img src="https://scontent.fcjs4-1.fna.fbcdn.net/v/t1.15752-9/508722013_1800384167524376_4557175588749700181_n.png?stp=dst-png_s480x480&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=TkDpSi4u-zcQ7kNvwHh090n&_nc_oc=AdlcXY4O0DrRgT_G4noRKo0od6A3ptZbOVN2pcInADxzrym1NZXiS0BCELNo2Ea-85k&_nc_ad=z-m&_nc_cid=1092&_nc_zt=23&_nc_ht=scontent.fcjs4-1.fna&oh=03_Q7cD2gGMyvvnkChNkW-JlyJt-5b_ZCLXej6Iy01N5fMJYMkYBA&oe=687E9F2E" alt="Gorra A diseño llama con visera plana" />
+      <h2>Camiseta blanca con diseño Los angeles</h2>
+      <p>Precio: $399.00 MXN</p>
+      <p class="stock">Agotado :(</p>
+      <a class="btn-carrito" onclick="agregarAlCarrito('Camiseta blanca con diseño Los angeles', 399)">Agregar al carrito</a>
+ </div>
+
+    
+  <section class="redes">
+    <h3>Síguenos en redes sociales:</h3>
+    <p>
+      <a href="https://www.instagram.com/mcheadoficial" target="_blank">Instagram</a> |
+      <a href="https://www.tiktok.com/@mcheadoficial" target="_blank">TikTok</a>
+    </p>
+    <p><strong>¿Quieres mayoreo? Contáctanos para precios especiales por paquetes.</strong></p>
+  </section>
+
+  <footer>
+    <p>Contáctanos en: mcheadmx@gmail.com</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+
+    let carrito = [];
+
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      actualizarCarrito();
+    }
+
+    function eliminarDelCarrito(index) {
+      carrito.splice(index, 1);
+      actualizarCarrito();
+    }
+
+    function actualizarCarrito() {
+      const lista = document.getElementById("lista-carrito");
+      const totalSpan = document.getElementById("total");
+      lista.innerHTML = "";
+      let total = 0;
+      carrito.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.textContent = `${item.nombre} - $${item.precio.toFixed(2)}`;
+        const btnEliminar = document.createElement("button");
+        btnEliminar.textContent = "X";
+        btnEliminar.className = "btn-eliminar";
+        btnEliminar.title = "Eliminar del carrito";
+        btnEliminar.onclick = () => eliminarDelCarrito(index);
+        li.appendChild(btnEliminar);
+        lista.appendChild(li);
+        total += item.precio;
+      });
+      totalSpan.textContent = total.toFixed(2);
+      document.getElementById("carrito").style.display = carrito.length ? "block" : "none";
+    }
+
+    function cerrarCarrito() {
+      document.getElementById("carrito").style.display = "none";
+    }
+
+    function copiarPedido() {
+      if(carrito.length === 0){
+        alert("El carrito está vacío");
+        return;
+      }
+      let pedido = "Hola!, quisiera hacer un pedido de:\n\n";
+      pedido += carrito.map(item => `${item.nombre} - $${item.precio.toFixed(2)}`).join('\n');
+      pedido += `\n\nTotal: $${carrito.reduce((sum, item) => sum + item.precio, 0).toFixed(2)}`;
+      navigator.clipboard.writeText(pedido).then(() => {
+        alert("Pedido copiado al portapapeles");
+      });
+    }
+
+    function enviarPedidoInstagram() {
+      if(carrito.length === 0){
+        alert("El carrito está vacío");
+        return;
+      }
+      let mensaje = "Hola!, quisiera hacer un pedido de:\n\n" +
+        carrito.map(item => `${item.nombre} - $${item.precio.toFixed(2)}`).join('\n') +
+        `\n\nTotal: $${carrito.reduce((sum, item) => sum + item.precio, 0).toFixed(2)}`;
+
+      // Abrir perfil oficial de Instagram
+      const urlInstagram = "https://www.instagram.com/mcheadoficial/";
+
+      alert("Se abrirá el perfil de Instagram. Por favor envía un mensaje directo con el siguiente texto:\n\n" + mensaje);
+      window.open(urlInstagram, "_blank");
+    }
+  </script>
+
 </body>
 </html>
